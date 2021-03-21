@@ -1,19 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="./boostrap/bootstrap-4.6.0-dist/css/bootstrap.min.css"/>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="./boostrap/bootstrap-4.6.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css-scss/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark navbar-default navbar-inverse">
+            <div class="container">
+                <div class="row justify-content-between col-12">
+                    <div>
+                        <a class="navbar-brand" href="#">Inferno</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse flex justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav navbar-right">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="banner" class="d-block w-100" style="background-image: url(./assets/images/1.jpg)">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="animate__animated animate__slideInDown" style="animation-delay: 1s; animation-duration: 1s;">We are <span>Inferno</span></h2>
+                        <h3 class="animate__animated animate__fadeInUp" style="animation-delay: 2s; animation-duration: 1s;">Create Digital Agency</h3>
+                        <p class="animate__animated animate__zoomIn" style="animation-delay: 3s; animation-duration: 1s;">
+                            <a href="#">Contact us</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="banner" class="d-block w-100" style="background-image: url(./assets/images/2.jpg)">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="animate__animated animate__zoomIn" style="animation-delay: 1s; animation-duration: 1s;">Best in <span>Planning</span></h2>
+                        <h3 class="animate__animated animate__fadeInLeft" style="animation-delay: 2s; animation-duration: 1s;">Strategy and planning</h3>
+                        <p class="animate__animated animate__zoomIn" style="animation-delay: 1s; animation-duration: 1s;">
+                            <a href="#">Contact us</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="banner" class="d-block w-100" style="background-image: url(./assets/images/3.jpg)">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="animate__animated animate__bounceInRight" style="animation-delay: 1s; animation-duration: 2s;">Best in <span>Business</span></h2>
+                        <h3 class="animate__animated animate__bounceInLeft" style="animation-delay: 2s; animation-duration: 2s;">Business and Consulting</h3>
+                        <p class="animate__animated animate__bounceInRight" style="animation-delay: 3s; animation-duration: 2s;">
+                            <a href="#">Contact us</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./boostrap/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
